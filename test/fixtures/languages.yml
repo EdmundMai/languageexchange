@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  learning: MyString
+  knows: MyString
+
+two:
+  learning: MyString
+  knows: MyString
