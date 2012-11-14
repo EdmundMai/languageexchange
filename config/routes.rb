@@ -1,6 +1,24 @@
 Langexchange::Application.routes.draw do
 
-  resources :users
+  get "messages/index"
+
+  get "messages/show"
+
+  get "messages/new"
+
+  get "messages/create"
+
+  get "messages/edit"
+
+  get "messages/update"
+
+  get "messages/destroy"
+
+  get "home/index"
+
+  resources :users do
+    resources :messages
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
