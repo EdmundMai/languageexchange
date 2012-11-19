@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121114210115) do
+ActiveRecord::Schema.define(:version => 20121119213527) do
 
   create_table "languages", :force => true do |t|
     t.string   "learning"
@@ -40,8 +40,11 @@ ActiveRecord::Schema.define(:version => 20121114210115) do
     t.string   "name"
     t.string   "gender"
     t.integer  "age"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.integer  "location_id"
+    t.integer  "language_id"
+    t.string   "remember_token"
   end
 
 end

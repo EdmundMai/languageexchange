@@ -2,11 +2,15 @@
 <p>Find me in app/views/home/index.html.erb</p>
 
 <%= form_for users_path, :method => "get" do %>
-	<%= localized_language_select(:user, :language, [], :include_blank => 'Please choose...') %> 
 
 	<%= label_tag "Select Country" %> <br>
 	<%= country_select(:user, :country, [], :include_blank => true) %> <br>
 
+	<%= label_tag "Language spoken" %>
+	<%= select_tag "Language", options_from_collection_for_select(LanguageList::COMMON_LANGUAGES, "id", "name") %>
+
 	<%= label_tag "City" %> <br>
 	<%= text_field_tag(:city) %>
+
+
 <% end %>

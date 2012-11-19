@@ -1,2 +1,8 @@
 <h1>Messages#create</h1>
 <p>Find me in app/views/messages/create.html.erb</p>
+
+<%= form_for(@user, @message) do |f| %>
+<%= f.label :content %>
+<%= f.text_area :content %>
+<%= f.submit %>
+<% end %>

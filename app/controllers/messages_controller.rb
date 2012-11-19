@@ -1,7 +1,10 @@
 class MessagesController < ApplicationController
-  def index
+  def sent
   end
 
+  def received
+  end
+  
   def show
   end
 
@@ -9,12 +12,6 @@ class MessagesController < ApplicationController
   end
 
   def create
-  end
-
-  def edit
-  end
-
-  def update
   end
 
   def destroy
